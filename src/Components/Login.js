@@ -17,7 +17,7 @@ const Login = (props)=>{
         e.preventDefault();
         try {
             const body ={email,password};
-            const test = await fetch(`${BASE_URL}/auth/login`,{
+            const test = await fetch(`${BASE_URL}auth/login`,{
                 method:"POST",
                 headers: {"Content-Type" : "application/json"},
                 body : JSON.stringify(body)

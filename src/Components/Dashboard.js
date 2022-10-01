@@ -12,7 +12,7 @@ const Dashboard = (props)=>{
     }
     const getname = async()=>{
         try {
-            const response = await fetch(`${BASE_URL}/dashboard`,{
+            const response = await fetch(`${BASE_URL}dashboard`,{
                 method:"GET",
                 headers:{token:localStorage.getItem("token")}
             });

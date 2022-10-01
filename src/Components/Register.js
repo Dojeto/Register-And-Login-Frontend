@@ -21,7 +21,7 @@ const Register = (props)=>{
         try {
             const body = {email,password,username};
             console.log(JSON.stringify(body));
-            const test = await fetch(`${BASE_URL}/auth/register`,{
+            const test = await fetch(`${BASE_URL}auth/register`,{
                 method:"POST",
                 headers: {"Content-Type" : "application/json"},
                 body : JSON.stringify(body)
